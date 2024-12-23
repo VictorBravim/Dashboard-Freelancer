@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.custom-scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: #2C394A #081E33;
+}
+.custom-scrollbar::-webkit-scrollbar {
+  width: 10px;
+  border-radius: 15px;
+}
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: #081E33;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background-color: #081E33; 
+  border-radius: 20px;
+  border-radius: 15px;
+}
